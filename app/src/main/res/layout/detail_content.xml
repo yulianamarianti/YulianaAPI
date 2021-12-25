@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#3A4DC6"
+            android:layout_height="200dp">
+            <TextView
+                android:id="@+id/titleDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALGORTIMA PENGURUTAN"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:textSize="25sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_below="@id/header"
+            android:layout_centerInParent="true"
+            android:layout_width="370dp"
+            android:layout_marginTop="-70dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgDetail"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/linkDetail"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Link"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:onClick="toLink"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example print 'Hello World'"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/helloworld"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example print 'Hello World'"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/descDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Description"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
